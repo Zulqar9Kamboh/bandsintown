@@ -27,13 +27,19 @@
             <!-- Artist Info Card -->
             <div id="artistInfo" class="artist-card col-lg-6 col-md-8 col-align-center" style="display: none;">
                 <div class="d-flex align-items-center">
-                    <img id="artistThumb" class="card-thumb" src="assets/images/default-artist-thumb.png" alt="Artist Thumb">
+                    <img id="artistThumb" class="card-thumb" src="assets/images/default-artist-thumb.png"
+                        alt="Artist Thumb">
                     <div class="card-content">
                         <h4 id="artistName" class="mb-2">John Doe</h4>
-                        <a id="artistFB" target="_blank" href=""><i class="fab fa-facebook-square mr-1"></i>Find on Facebook</a>
+                        <a id="artistFB" target="_blank" href=""><i class="fab fa-facebook-square mr-1"></i>Find on
+                            Facebook</a>
+                        <div class="mt-2" id="upEvents"></div>
                     </div>
                 </div>
             </div>
+            <!-- In case no artis record found -->
+            <div id="noArtistFound" class="alert alert-danger col-md-6 col-align-center text-center"
+                style="display: none;"></div>
         </div>
     </section>
 
