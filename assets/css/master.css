@@ -1,0 +1,17 @@
+﻿/*Framework : Bootstrap 4.3*/
+@import url('../lib/bootstrap/css/bootstrap.min.css');
+
+/*Icons: Font-awesome 5.10.2*/
+@import url('../lib/fontawesome/css/all.min.css');
+
+/*Website Fonts*/
+@import url('fonts.css');
+
+/*Common Style*/
+@import url('common.css');
+
+/*Custom Style*/
+@import url('style.css');
+
+/*Used for CSS Breakpoints: media quries*/
+@import url('media-queries.css');
