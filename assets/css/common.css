@@ -1,6 +1,7 @@
 body { font-family: 'Roboto', sans-serif; color: #373737; } 
 b, strong { font-weight: 500; } 
-
+a { color: #00b4b3; }
+a:hover { color: #00b4b3 !important; text-decoration: none; opacity: 0.9; } 
 
 /* Spacing */
 .col-align-center { margin: 0 auto !important; } 
@@ -17,4 +18,5 @@ b, strong { font-weight: 500; }
 
 
 /* forms style */
-.form-control { height: calc(3rem + 2px); border-radius: 4px; font-size: 1.15rem; }
+.form-control { height: calc(3rem + 2px); border-radius: 4px; letter-spacing: 0.025rem; font-size: 1.15rem; } 
+.form-control:focus { border-color: #00b4b3; box-shadow: 0 0 0 0.2rem rgba(0,180,178,.25); }
