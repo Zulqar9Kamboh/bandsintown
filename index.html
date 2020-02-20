@@ -15,7 +15,7 @@
                 <h1 class="font-weight-light text-white">Bandsintown</h1>
             </div>
             <div class="col-lg-6 col-md-8 col-align-center form-group position-relative px-0">
-                <input class="form-control" type="text" name="" placeholder="Search artist">
+                <input class="form-control" type="text" name="" id="searchArtistField" placeholder="Search artist">
                 <button id="searchArtist"><i class="fa fa-search"></i></button>
             </div>
         </div>
@@ -25,12 +25,12 @@
     <section class="mt-4">
         <div class="container">
             <!-- Artist Info Card -->
-            <div class="artist-card col-lg-6 col-md-8 col-align-center">
+            <div id="artistInfo" class="artist-card col-lg-6 col-md-8 col-align-center" style="display: none;">
                 <div class="d-flex align-items-center">
-                    <img class="card-thumb" src="assets/images/default-artist-thumb.png" alt="Artist Thumb">
+                    <img id="artistThumb" class="card-thumb" src="assets/images/default-artist-thumb.png" alt="Artist Thumb">
                     <div class="card-content">
-                        <h4 class="mb-2">John Doe</h4>
-                        <a target="_blank" href=""><i class="fab fa-facebook-square mr-1"></i>/artist-fb-page</a>
+                        <h4 id="artistName" class="mb-2">John Doe</h4>
+                        <a id="artistFB" target="_blank" href=""><i class="fab fa-facebook-square mr-1"></i>Find on Facebook</a>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
     </section>
 
     <!-- Artist Events Details -->
-    <section class="mt-4">
+    <section class="mt-4 d-none">
         <div class="container">
             <div class="col-lg-6 col-md-8 col-align-center px-0">
                 <div class="row">
