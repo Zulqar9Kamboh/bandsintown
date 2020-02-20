@@ -1,5 +1,15 @@
 ﻿/* Header Style */
-header { background-color: #fafafa; text-align: center; padding: 3rem 0rem; }
+header { background-color: #fafafa; text-align: center; padding: 3rem 0rem; } 
 
 /* Search Field */
 #searchArtist { position: absolute; right: 0.65rem; top: 50%; background: none; border: none; transform: translateY(-50%); } 
+
+/*Artist Info Card*/
+.artist-card { border: 1px solid #efefef; background-color: #fafafa; padding: 1rem; border-radius: 4px; } 
+.card-thumb { display: block; width: 128px; height: 128px; object-fit: cover; object-position: center; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; } 
+.card-content { width: 100%; display: block; margin-left: 2.25rem; } 
+
+/* Artist Events Details */
+.artis-details-card { background-color: #fafafa; border: 1px solid #efefef; padding: 1rem; font-size: 0.85rem; border-radius: 4px; } 
+.artis-details-card h5 { border-bottom: 1px solid #efefef; padding-bottom: 0.5rem; margin-bottom: 0.75rem; font-size: 1.1rem; letter-spacing: 0.025rem; } 
+.artis-details-card strong { line-height: normal; }
