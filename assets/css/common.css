@@ -1,0 +1,20 @@
+body { font-family: 'Roboto', sans-serif; color: #373737; } 
+b, strong { font-weight: 500; } 
+
+
+/* Spacing */
+.col-align-center { margin: 0 auto !important; } 
+.gutters-3 { margin-right: -2.5px; margin-left: -2.5px } 
+.gutters-3 > .col, .gutters-3 > [class*=col-] { padding-right: 2.5px; padding-left: 2.5px } 
+.gutters-5 { margin-right: -5px !important; margin-left: -5px !important } 
+.gutters-5 > .col, .gutters-5 > [class*=col-] { padding-right: 5px; padding-left: 5px } 
+.gutters-10 { margin-right: -10px !important; margin-left: -10px !important; } 
+.gutters-10 > .col, .gutters-10 > [class*=col-] { padding-right: 10px; padding-left: 10px } 
+.gutters-20 { margin-right: -20px; margin-left: -20px } 
+.gutters-20 > .col, .gutters-20 > [class*=col-] { padding-right: 20px; padding-left: 20px } 
+.gutters-25 { margin-right: -25px; margin-left: -25px } 
+.gutters-25 > .col, .gutters-25 > [class*=col-] { padding-right: 25px; padding-left: 25px } 
+
+
+/* forms style */
+.form-control { height: calc(3rem + 2px); border-radius: 4px; font-size: 1.15rem; }

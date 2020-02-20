@@ -1,1 +1,5 @@
-﻿
+﻿/* Header Style */
+header { background-color: #fafafa; text-align: center; padding: 3rem 0rem; }
+
+/* Search Field */
+#searchArtist { position: absolute; right: 0.65rem; top: 50%; background: none; border: none; transform: translateY(-50%); } 
