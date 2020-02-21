@@ -2,6 +2,7 @@ body { font-family: 'Roboto', sans-serif; color: #373737; }
 b, strong { font-weight: 500; } 
 a { color: #00b4b3; } 
 a:hover { color: #00b4b3 !important; text-decoration: none; opacity: 0.9; } 
+a.disabled { pointer-events: none; user-select: none; opacity: 0.5; } 
 
 /* Spacing */
 .col-align-center { margin: 0 auto !important; } 
@@ -23,7 +24,7 @@ a:hover { color: #00b4b3 !important; text-decoration: none; opacity: 0.9; }
 .form-control.disabled, .form-control:disabled { opacity: 0.5; cursor: not-allowed; } 
 
 /* Buttons */
-.btn { padding: 0.375rem 1.15rem; border-radius: 0; font-weight: 500; font-size: 0.9rem; letter-spacing: 1px; border-radius: 4px; } 
+.btn { padding: 0.475rem 1.15rem 0.375rem; border-radius: 0; font-weight: 500; font-size: 0.9rem; letter-spacing: 1px; border-radius: 4px; } 
 .btn.disabled, .btn:disabled { opacity: 0.5; cursor: not-allowed; } 
 .btn:hover { opacity: 0.95; } 
 .btn.focus, .btn:focus { box-shadow: none !important; } 
@@ -35,8 +36,23 @@ a:hover { color: #00b4b3 !important; text-decoration: none; opacity: 0.9; }
 .btn-primary:hover { color: #ffffff !important; background-color: #00b4b3; border-color: #00b4b3 } 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle { color: #ffffff !important; background-color: #00b4b3; border-color: #00b4b3 } 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus { box-shadow: none; color: #ffffff !important; } 
+.btn-primary.disabled, .btn-primary:disabled { color: #fff; background-color: #00b4b3; border-color: #00b4b3; opacity: 0.5; } 
+
+.btn-outline-primary { color: #00b4b3; border-color: #00b4b3; } 
+.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active { color: #fff; background-color: #00b4b3; border-color: #00b4b3; } 
 
 /* media quries for common style */
 @media (max-width: 575.98px){
  .btn { font-size: 0.8rem; } 
+ }
+
+ /* #=#=# Animations #=#=# */
+@-webkit-keyframes heroEffect { 
+ 0% { opacity: 0.35; } 
+ 100% { opacity: 1; } 
+ }
+ 
+ @keyframes heroEffect { 
+ 0% { opacity: 0.35; } 
+ 100% { opacity: 1; } 
  }

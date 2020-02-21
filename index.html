@@ -21,6 +21,11 @@
         </div>
     </header>
 
+    <!-- Back to Search this will return to search when artist events are visiable -->
+    <div id="backToSearch" class="text-center mt-4" style="display: none;">
+        <button class="btn btn-outline-primary"><i class="fa fa-arrow-left"></i> Back To Search</button>
+    </div>
+
     <!-- Search Result -->
     <section class="mt-4">
         <div class="container">
@@ -46,32 +51,9 @@
     <!-- Artist Events Details -->
     <section class="mt-4">
         <div class="container">
-            <div class="col-md-6 col-align-center px-0">
-                <div class="row" id="artistEventsContainer">
-                    <!-- <div class="col-xl-6 mb-3">
-                        <div class="artis-details-card">
-                            <h5>Event Details</h5>
-                            <div class="row gutters-3">
-                                <div class="col-6 mb-2">
-                                    <span>Country:</span>
-                                    <strong class="d-block">Pakistan</strong>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <span>City:</span>
-                                    <strong class="d-block">Lahore</strong>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <span>Venue:</span>
-                                    <strong class="d-block">Sareena</strong>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <span>Date:</span>
-                                    <strong class="d-block">23 Mar, 2020</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+            <div class="col-lg-6 col-md-8 col-align-center px-0">
+                <!-- Events append within this container -->
+                <div class="row" id="artistEventsContainer"></div>
             </div>
         </div>
     </section>

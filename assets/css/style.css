@@ -1,16 +1,25 @@
 ﻿/* Header Style */
 header { background-color: #00b4b3; text-align: center; padding: 3rem 0rem 3.25rem; } 
-header .brand { margin-bottom: 2rem; }
+header .brand { margin-bottom: 2rem; } 
 
 /* Search Field */
-#searchArtist { position: absolute; right: 0.65rem; top: 50%; background: none; border: none; transform: translateY(-50%); font-size: 1.25rem; } 
+#searchArtist { position: absolute; right: 0.65rem; top: 50%; background: none; border: none; transform: translateY(-50%); font-size: 1.25rem; color: #00b4b3; } 
+#searchArtist:hover { opacity: 0.75; } 
+#searchArtist:focus { outline: none; box-shadow: none; } 
 
-/*Artist Info Card*/
+/*Artist Card*/
 .artist-card { border: 1px solid #00b4b3; padding: 1rem; border-radius: 4px; } 
 .card-thumb { display: block; width: 128px; height: 128px; object-fit: cover; object-position: center; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; } 
 .card-content { width: 100%; display: block; margin-left: 2.25rem; } 
 
-/* Artist Events Details */
-.artis-details-card { background-color: #fafafa; border: 1px solid #efefef; padding: 1rem; font-size: 0.85rem; border-radius: 4px; } 
+/* Artist Details Card */
+.artis-details-card { background-color: #fafafa; border: 1px solid #efefef; padding: 1rem; font-size: 0.85rem; border-radius: 4px; height: 100%; transition: all 300ms ease-in-out; -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; } 
+.artis-details-card:hover { box-shadow: 0 0 15px 2px rgba(0,0,0,0.15); background-color: #ffffff; } 
 .artis-details-card h5 { border-bottom: 1px solid #00b4b3; padding-bottom: 0.5rem; margin-bottom: 0.75rem; font-size: 1.1rem; letter-spacing: 0.025rem; } 
-.artis-details-card strong { color: #00b4b3; line-height: normal; }
+.artis-details-card strong { color: #00b4b3; line-height: normal; } 
+.up-event-counter { background-color: #00b4b3; text-align: center; padding: 1rem; color: #fff; margin-bottom: 1.5rem; animation: heroEffect 1500ms ease; -webkit-animation: heroEffect 1500ms ease; } 
+
+/* Remove search */
+header.only-header { padding: 1.25rem; animation: heroEffect 1500ms ease; -webkit-animation: heroEffect 1500ms ease; } 
+.only-header .brand { margin-bottom: 0; } 
+.only-header .form-group.col-align-center.position-relative { display: none; } 
