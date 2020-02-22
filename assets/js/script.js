@@ -15,6 +15,7 @@ $(function () {
                 dataType: 'json',
                 beforeSend: function (xhr) {
                     //wait for the query results
+                    $('#artistInfo').addClass('opacity-30');
                     $('#searchArtistField').prop('disabled', true);
                     $('#artistEventsContainer').empty();
                 },
@@ -54,7 +55,9 @@ $(function () {
                     alert("Error Status: " + xhr.status + ", " + xhr.statuText);
                 },
                 complete: function (xhr, status) {
-
+                    $('#artistInfo').removeClass('opacity-30');
+                    //when trigger this will set the values to local storage
+                    setLocalVals();
                 }
             });
         }
@@ -101,7 +104,7 @@ function getUpcomingEvents() {
 
             // this loop runs for all upcoming events details
             $.each(result, function (key, val) {
-                if (key == 0) { }
+                if (key == 0) {}
                 artistEventList += '<div class="col-xl-6 mb-4">' +
                     '<div class="artis-details-card">' +
                     '<h5>' + ++key + ': Event Detail</h5>' +
@@ -151,3 +154,47 @@ function showDate(dat) {
 
     return d + ' ' + m + ', ' + y;
 }
+
+
+//Local Storage for the last searched artist
+
+//This function set the values to local storage
+function setLocalVals() {
+    var an = $('#artistName').text();
+    var tumb = $('#artistThumb').attr('src');
+    var fb = $('#artistFB').html();
+    var events = $('#upEvents').html();
+    localStorage.setItem('locArtistName', an);
+    localStorage.setItem('locArtistThumb', tumb);
+    localStorage.setItem('locFacebookPage', fb);
+    localStorage.setItem('locFacebookPageURL', $('#artistFB').attr('href'));
+    localStorage.setItem("locArtistEvents", events);
+}
+
+
+//This gets the values from local storage
+$(function () {
+
+    //this set the value to artist name from local storage
+    $('#artistName').text(localStorage.getItem('locArtistName'))
+
+    //and it artist name is not empty this will show the artist card and get the values from local storage
+    if ($('#artistName').text() != "") {
+        $('#artistInfo').show();
+        $('#artistName').text(localStorage.getItem('locArtistName'))
+        $('#artistThumb').attr('src', localStorage.getItem('locArtistThumb'))
+        $('#artistFB').html(localStorage.getItem('locFacebookPage'))
+        $('#artistFB').attr("href", localStorage.getItem('locFacebookPageURL'))
+        $('#upEvents').html(localStorage.getItem("locArtistEvents"))
+
+        if ($('#artistFB').attr('href') == "") {
+            $('#artistFB').addClass('disabled');
+        } else {
+            $('#artistFB').removeClass('disabled');
+        }
+
+    } else {
+        $('#artistInfo').hide();
+
+    }
+})

@@ -3,6 +3,7 @@ b, strong { font-weight: 500; }
 a { color: #00b4b3; } 
 a:hover { color: #00b4b3 !important; text-decoration: none; opacity: 0.9; } 
 a.disabled { pointer-events: none; user-select: none; opacity: 0.5; } 
+.opacity-30 { opacity: 0.3; } 
 
 /* Spacing */
 .col-align-center { margin: 0 auto !important; } 

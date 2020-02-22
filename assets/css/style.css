@@ -8,7 +8,8 @@ header .brand { margin-bottom: 2rem; }
 #searchArtist:focus { outline: none; box-shadow: none; } 
 
 /*Artist Card*/
-.artist-card { border: 1px solid #00b4b3; padding: 1rem; border-radius: 4px; } 
+.artist-card { border: 1px solid #00b4b3; padding: 1rem; border-radius: 4px; box-shadow: 0 0 15px 0px rgba(0,0,0,.15); transition: all 350ms ease-in-out; } 
+.artist-card:hover { box-shadow: none; } 
 .card-thumb { display: block; width: 128px; height: 128px; object-fit: cover; object-position: center; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; } 
 .card-content { width: 100%; display: block; margin-left: 2.25rem; } 
 
@@ -20,6 +21,6 @@ header .brand { margin-bottom: 2rem; }
 .up-event-counter { background-color: #00b4b3; text-align: center; padding: 1rem; color: #fff; margin-bottom: 1.5rem; animation: heroEffect 1500ms ease; -webkit-animation: heroEffect 1500ms ease; } 
 
 /* Remove search */
-header.only-header { padding: 1.25rem; animation: heroEffect 1500ms ease; -webkit-animation: heroEffect 1500ms ease; } 
+header.only-header { padding: 1.25rem; animation: heroEffect 1500ms ease infinite; -webkit-animation: heroEffect 1500ms ease; } 
 .only-header .brand { margin-bottom: 0; } 
 .only-header .form-group.col-align-center.position-relative { display: none; } 
